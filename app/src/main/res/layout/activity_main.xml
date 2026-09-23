@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 1. El TextView del saludo -->
+    <TextView
+        android:id="@+id/textPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a Rivendell, viajero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <!-- 2. El boton interactivo para aumentar el numero de miembros -->
+    <Button
+        android:id="@+id/btnForjar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forjar la comunidad"
+        app:layout_constraintBottom_toTopOf="@+id/numMiembros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPrincipal"
+         />
+
+    <!-- 3. El Textview que muestra el numero de miembros -->
+    <TextView
+        android:id="@+id/numMiembros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miembros reunidos: 0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnForjar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
